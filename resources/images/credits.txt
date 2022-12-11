@@ -1,0 +1,31 @@
+- Headway Hosting Special Designs (Icons, Logos, Packages, etc.)
+	- Creator: Abdelhady Salah
+	- Icon credits go to their respective owners
+
+- data-center-image.jpg
+	- Creator: cybrain 
+	- Credit: Getty Images/iStockphoto
+	- Copyright: cybrain
+
+- Earth.png
+	- Source: https://en.wikipedia.org/wiki/File:Earth_icon_2.png
+
+- Flag icons provided by Freepik
+
+- earth-network.jpg
+	- Source: https://wallpaperscraft.com/download/galaxy_earth_network_126341/3840x2400
+
+- businessman-slide.jpg
+	- Source: https://www.vecteezy.com/free-photos/business-growth
+
+- business-growth-slide.jpg
+	- Source: https://www.istockphoto.com/photo/business-trends-graphs-and-charts-gm1127138768-296971126
+
+- financial-growth-slide.jpg
+	- Source: https://www.istockphoto.com/photo/financial-and-technical-data-analysis-graph-showing-search-findings-gm850495466-139617167
+
+- call-center.jpg
+	- Source: https://asianewsonly.com/why-call-center-technical-support-is-essential/
+
+- docker.jpg
+	- Source: https://medium.com/@suraj.kc/adding-docker-containers-for-react-applications-803914b2077b

@@ -1,0 +1,59 @@
+Colors
+------
+
+Primary Color
+
+#0D2962 (Dark blue)
+
+Secondary Colors
+
+#5D87E8 (Light blue)
+#D87D28 (Orange)
+#424242 (Dark gray)
+#FF0000 (Red)
+
+Text
+
+#424242 (Dark gray)
+#FFFFFF (White)
+
+Background
+
+#FFFFFF (White)
+#C6C6C6 (Light gray)
+#D87D28 (Orange)
+
+
+Other
+
+Overlay Opacity: 60
+Button Radius: 7px
+
+Typography
+----------
+
+Headings
+Roboto
+
+H1
+48px -> 3rem
+
+H2
+32px -> 2rem
+
+H3
+24px -> 1.5rem
+
+Paragraph
+16px -> 1rem
+
+Default Font
+Roboto
+
+Layout
+------
+
+Content max width: 1366px
+Content width: 100%
+Header-to-content: 73px
+Section spacing: 48px top/bottom
