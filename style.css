@@ -15,3 +15,153 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
+
+/** Presets **/
+
+body {
+    font-family: 'Roboto';
+    font-size: 1rem;
+    line-height: 1.4rem;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 3.4rem;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+}
+
+.primary-color {
+    color: #0D2962;
+}
+
+.primary-bg {
+    background-color: #0D2962;
+}
+
+.secondary-light-blue-color {
+    color: #5D87E8;
+}
+
+.secondary-light-blue-bg {
+    background-color: #5D87E8;
+}
+
+.secondary-orange-color {
+    color: #D87D28;
+}
+
+.secondary-orange-bg {
+    background-color: #D87D28;
+}
+
+.secondary-dark-grey-color {
+    color: #424242;
+}
+
+.secondary-dark-grey-bg {
+    background-color: #424242;
+}
+
+.secondary-light-grey-color {
+    color: #C6C6C6;
+}
+
+.secondary-light-grey-bg {
+    background-color: #C6C6C6;
+}
+
+.secondary-red-color {
+    color: #FF0000;
+}
+
+.secondary-red-bg {
+    background-color: #FF0000;
+}
+
+.secondary-white-color {
+    color: #FFFFFF;
+}
+
+.secondary-white-bg {
+    background-color: #FFFFFF;
+}
+
+.overlay-opacity {
+    opacity: 0.60;
+}
+
+.border-radius {
+    border-radius: 7px;
+}
+
+.content-max-width {
+    max-width: 1366px;
+    width: 100%;
+}
+
+.header-to-content {
+    margin-bottom: 73px;
+}
+
+.section-spacing {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+/** Header **/
+
+header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-left: 77px;
+    margin-right: 199px;
+}
+
+.header-logo img {
+    max-width: 270px;
+    display: flex;
+}
+
+.header-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav ul li {
+    padding: 28px 15px;
+    display: block;
+}
+
+.header-nav ul li:hover {
+    border-bottom: 2px solid #5D87E8;
+}
+
+a.nav-link {
+    text-decoration: none;
+    color: inherit;
+}
