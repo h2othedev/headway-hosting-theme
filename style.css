@@ -56,6 +56,14 @@ h3 {
     color: #5D87E8;
 }
 
+.secondary-light-blue-border-top {
+    border-top: 2px solid #5D87E8;
+}
+
+.secondary-light-blue-border-bottom {
+    border-bottom: 2px solid #5D87E8;
+}
+
 .secondary-light-blue-bg {
     background-color: #5D87E8;
 }
@@ -168,10 +176,6 @@ header {
 .header-nav ul li {
     padding: 28px 15px;
     display: block;
-}
-
-.header-nav ul li:hover {
-    border-bottom: 2px solid #5D87E8;
 }
 
 a.nav-link {

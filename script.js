@@ -15,3 +15,17 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
+
+window.onload = () => {
+    const headerNav = document.querySelector('.header-nav')
+    headerNav.addEventListener('mouseover', (e) => {
+        if (e.target.tagName === 'LI') {
+            e.target.classList.add('secondary-light-blue-border-bottom')
+        }
+    })
+    headerNav.addEventListener('mouseout', (e) => {
+        if (e.target.tagName === 'LI') {
+            e.target.classList.remove('secondary-light-blue-border-bottom')
+        }
+    })
+}
