@@ -19,12 +19,12 @@
 window.onload = () => {
     const headerNav = document.querySelector('.header-nav')
     headerNav.addEventListener('mouseover', (e) => {
-        if (e.target.tagName === 'LI') {
+        if (e.target.tagName === 'LI' && !e.target.classList.contains('active')) {
             e.target.classList.add('secondary-light-blue-border-bottom')
         }
     })
     headerNav.addEventListener('mouseout', (e) => {
-        if (e.target.tagName === 'LI') {
+        if (e.target.tagName === 'LI' && !e.target.classList.contains('active')) {
             e.target.classList.remove('secondary-light-blue-border-bottom')
         }
     })
