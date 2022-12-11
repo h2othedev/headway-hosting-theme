@@ -229,37 +229,34 @@ section {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
-
-.section-row {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    flex-wrap: wrap;
 }
 
 .section-column-third {
     display: flex;
-    width: 32.33%;
+    flex: 0 0 32%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    margin: 0px 5px;
+    margin: 5px;
     align-self: stretch;
+    position: relative;
 }
 
 .section-column-half {
     display: flex;
-    width: 50%;
+    flex: 0 0 48%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    margin: 0px 10px;
+    margin: 5px;
     align-self: stretch;
+    position: relative;
 }
 
 .section-column {
@@ -270,6 +267,7 @@ section {
     justify-content: center;
     box-sizing: border-box;
     align-self: stretch;
+    position: relative;
 }
 
 .section-hero {
@@ -349,5 +347,6 @@ section {
 
 .icon {
     filter: invert(100%);
-    max-width: 75px;
+    max-width: 80px;
+    width: 100%;
 }
