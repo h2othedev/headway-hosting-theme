@@ -52,8 +52,20 @@ h3 {
     background-color: #0D2962;
 }
 
+.primary-border {
+    border: 2px solid #0D2962;
+}
+
+.primary-border-bottom {
+    border-bottom: 2px solid #0D2962;
+}
+
 .secondary-light-blue-color {
     color: #5D87E8;
+}
+
+.secondary-light-blue-border {
+    border: 2px solid #5D87E8;
 }
 
 .secondary-light-blue-border-top {
@@ -125,18 +137,22 @@ h3 {
 }
 
 .content-max-width {
-    max-width: 1366px;
-    width: 100%;
+    max-width: 1366px!important;
+    width: 100%!important;
     margin: 0 auto;
 }
 
 .header-to-content {
-    margin-bottom: 73px;
+    margin-bottom: 73px!important;
 }
 
 .section-spacing {
-    margin-top: 48px;
-    margin-bottom: 48px;
+    margin-top: 48px!important;
+    margin-bottom: 48px!important;
+}
+
+.text-center {
+    text-align: center;
 }
 
 /** Header **/
@@ -188,6 +204,7 @@ a.nav-link {
 main {
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
@@ -195,6 +212,64 @@ main {
 
 section {
     width: 100%;
+}
+
+.section-heading {
+    width: max-content;
+    margin: 0 auto;
+}
+
+.section-heading h2 {
+    padding-top: 10px;
+}
+
+.section-row {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-row {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.section-column-third {
+    display: flex;
+    width: 33.33%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0px 5px;
+    align-self: stretch;
+}
+
+.section-column-half {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0px 10px;
+    align-self: stretch;
+}
+
+.section-column {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    align-self: stretch;
 }
 
 .section-hero {
@@ -226,6 +301,12 @@ section {
     text-align: center;
     width: max-content;
     margin: 0 auto;
+    transition: 4s background-color;
+    cursor: pointer;
+}
+
+.hero-subheading:hover {
+    background-color: transparent;
 }
 
 .hero-icons {
@@ -264,4 +345,9 @@ section {
 .hero-icon h3 {
     white-space: nowrap;
     margin: 0 10px;
+}
+
+.icon {
+    filter: invert(100%);
+    max-width: 75px;
 }
