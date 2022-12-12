@@ -18,6 +18,11 @@
 
 /** Presets **/
 
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
@@ -88,6 +93,14 @@ h3 {
     background-color: #D87D28;
 }
 
+.secondary-orange-border-top {
+    border-top: 2px solid #D87D28;
+}
+
+.secondary-orange-border-bottom {
+    border-bottom: 2px solid #D87D28;
+}
+
 .secondary-dark-grey-color {
     color: #424242;
 }
@@ -140,6 +153,7 @@ h3 {
     max-width: 1366px!important;
     width: 100%!important;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .header-to-content {
@@ -157,6 +171,11 @@ h3 {
 
 .white-space-nowrap {
     white-space: nowrap;
+}
+
+.separator {
+    width: 100%;
+    height: 5px;
 }
 
 /** Header **/
@@ -212,6 +231,7 @@ main {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 section {
@@ -517,4 +537,56 @@ section {
     width: 75px;
     filter: invert(23%) sepia(0%) saturate(84%) hue-rotate(150deg) brightness(90%) contrast(82%);
     cursor: pointer;
+}
+
+/** WP Hosting **/
+
+.wp-hosting-section {
+    background-image: url(./resources/images/software/wordpress.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 45px 15px;
+}
+
+.wp-hosting-heading {
+    padding: 10px;
+}
+
+.wp-hosting-cards {
+    width: 90%;
+    position: relative;
+}
+
+.wp-hosting-card {
+    padding: 0 14%;
+    position: relative;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.wp-hosting-card-content {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 0 3%;
+    transform: translateX(-50%);
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.wp-hosting-plan-heading {
+    margin-bottom: 0;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.wp-hosting-plan-pricing {
+    margin-top: 5px;
+}
+
+.wp-hosting-plan-text {
+    line-height: 1.6rem;
 }
