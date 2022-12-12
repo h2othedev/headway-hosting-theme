@@ -24,6 +24,9 @@ body {
     line-height: 1.4rem;
     margin: 0;
     font-weight: 400!important;
+    background-color: #d6d6d6;
+    background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 h1 {
@@ -160,8 +163,8 @@ h3 {
 }
 
 .section-spacing {
-    margin-top: 48px!important;
-    margin-bottom: 48px!important;
+    padding-top: 48px!important;
+    padding-bottom: 48px!important;
 }
 
 .text-center {
@@ -285,6 +288,7 @@ main {
 
 section {
     width: 100%;
+    background-color: white;
 }
 
 .section-heading {
@@ -443,12 +447,10 @@ section {
 
 /** Regions **/
 
-.regions-section {
-    background-image: url('./resources/images/other/earth-network.jpg');background-repeat: no-repeat;background-size: cover;background-attachment: fixed;
-}
-
 .regions-container {
     padding: 185px 0;
+    width: 100%;
+    background-image: url('./resources/images/other/earth-network.jpg');background-repeat: no-repeat;background-size: cover;background-attachment: fixed;
 }
 
 .regions-heading-container {
@@ -478,13 +480,14 @@ section {
 /** Heavy Lifting **/
 
 .heavy-lifting-section {
-    width: 90%;
+    width: 100%;
 }
 
 .heavy-lifting-container {
     padding: 15px 75px;
     box-sizing: border-box;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .heavy-lifting-heading-effect {
@@ -584,12 +587,13 @@ section {
 
 /** WP Hosting **/
 
-.wp-hosting-section {
+.wp-hosting-container {
     background-image: url(./resources/images/software/wordpress.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 45px 15px;
+    width:100%;
 }
 
 .wp-hosting-heading {
