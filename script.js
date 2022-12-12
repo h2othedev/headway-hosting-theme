@@ -52,4 +52,27 @@ window.onload = () => {
     const testimonialNext = document.querySelector('.testimonial-next')
     testimonialPrev.addEventListener('click', () => changeTestimonial(activeTestimonial - 1))
     testimonialNext.addEventListener('click', () => changeTestimonial(activeTestimonial + 1))
+    //Slideshow
+    let activeSlider = 0
+    const sliders = document.querySelectorAll('.slider')
+    const maxSliders = sliders.length
+    const changeSlider = (n) => {
+        if (n >= maxSliders) {
+            n = 0
+        }
+        if (n < 0) {
+            n = maxSliders - 1
+        }
+        activeSlider = n
+        for (const slider of sliders) {
+            if (slider.classList.contains('slider-active')) {
+                slider.classList.remove('slider-active')
+            }
+        }
+        sliders[activeSlider].classList.add('slider-active')
+    }
+    const sliderPrev = document.querySelector('.slider-prev')
+    const sliderNext = document.querySelector('.slider-next')
+    sliderPrev.addEventListener('click', () => changeSlider(activeSlider - 1))
+    sliderNext.addEventListener('click', () => changeSlider(activeSlider + 1))
 }
