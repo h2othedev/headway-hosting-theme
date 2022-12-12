@@ -17,6 +17,7 @@
 */
 
 window.onload = () => {
+    //Navigation
     const headerNav = document.querySelector('.header-nav')
     headerNav.addEventListener('mouseover', (e) => {
         if (e.target.tagName === 'LI' && !e.target.classList.contains('active')) {
@@ -28,4 +29,27 @@ window.onload = () => {
             e.target.classList.remove('secondary-light-blue-border-bottom')
         }
     })
+    //Testimonials
+    let activeTestimonial = 0
+    const testimonials = document.querySelectorAll('.testimonial')
+    const maxTestimonials = testimonials.length
+    const changeTestimonial = (n) => {
+        if (n >= maxTestimonials) {
+            n = 0
+        }
+        if (n < 0) {
+            n = maxTestimonials - 1
+        }
+        activeTestimonial = n
+        for (const testimonial of testimonials) {
+            if (testimonial.classList.contains('testimonial-active')) {
+                testimonial.classList.remove('testimonial-active')
+            }
+        }
+        testimonials[activeTestimonial].classList.add('testimonial-active')
+    }
+    const testimonialPrev = document.querySelector('.testimonial-prev')
+    const testimonialNext = document.querySelector('.testimonial-next')
+    testimonialPrev.addEventListener('click', () => changeTestimonial(activeTestimonial - 1))
+    testimonialNext.addEventListener('click', () => changeTestimonial(activeTestimonial + 1))
 }
