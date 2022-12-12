@@ -128,6 +128,10 @@ h3 {
     background-color: #FFFFFF;
 }
 
+.secondary-white-border-right {
+    border-right: 2px solid #FFFFFF;
+}
+
 .secondary-black-color {
     color: #000000;
 }
@@ -199,6 +203,28 @@ input:focus {
     padding: 5px 15px;
     max-width: max-content!important;
     cursor: pointer;
+}
+
+a {
+    color: #5D87E8;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D87D28;
+}
+
+/** Logo **/
+
+.logo {
+    max-width: 270px;
+    display: flex;
+}
+
+.icon {
+    filter: invert(100%);
+    max-width: 80px;
+    width: 100%;
 }
 
 /** Header **/
@@ -390,12 +416,6 @@ section {
 .hero-icon h3 {
     white-space: nowrap;
     margin: 0 10px;
-}
-
-.icon {
-    filter: invert(100%);
-    max-width: 80px;
-    width: 100%;
 }
 
 /** Solutions **/
@@ -758,4 +778,51 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;
+}
+
+/** Footer **/
+
+footer {
+    padding: 25px 75px;
+}
+
+.footer-left-column {
+    justify-content: flex-start;
+    padding: 0 75px;
+    text-align: center;
+}
+
+.footer-right-column {
+    justify-content: flex-start;
+}
+
+.explore-container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px 35px;
+    line-height: 2.6rem;
+}
+
+.follow-us-container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px 35px;
+}
+
+.social-icons-row {
+    justify-content: flex-start;
+}
+
+.icon-social {
+    width: 40px;
+}
+
+.icon-social:hover {
+    opacity: 0.7;
+}
+
+.copyright {
+    text-align: left;
+    align-items: flex-start;
+    padding-top: 50px;
 }
