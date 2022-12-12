@@ -414,10 +414,14 @@ section {
 
 /** Heavy Lifting **/
 
-.heavy-lifting-row {
-    width: 80%;
-    padding: 15px 45px;
+.heavy-lifting-section {
+    width: 90%;
+}
+
+.heavy-lifting-container {
+    padding: 15px 75px;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .heavy-lifting-heading-effect {
@@ -426,8 +430,8 @@ section {
 
 .heavy-lifting-card-container {
     margin: 15px;
-    padding: 0 20px;
-    max-width: 370px;
+    padding: 25px 20px;
+    max-width: 400px;
 }
 
 .heavy-lifting-card {
@@ -456,7 +460,7 @@ section {
 /** Testimonials **/
 
 .testimonials-container {
-    width: 90%;
+    padding: 75px 175px;
 }
 
 .testimonial-container {
