@@ -673,3 +673,19 @@ section {
     cursor: pointer;
     padding-bottom: 115px;
 }
+
+/** Supported Software **/
+
+.software-container {
+    padding: 50px;
+}
+
+.software-logo {
+    width: 200px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 10px 25px;
+    margin: 10px 25px;
+}
