@@ -175,8 +175,8 @@ header {
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    margin-left: 77px;
-    margin-right: 199px;
+    padding-left: 77px;
+    padding-right: 199px;
 }
 
 .header-logo img {
@@ -469,6 +469,27 @@ section {
 
 .testimonial-active {
     display: block;
+    animation-name: testimonial-fade-in;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes testimonial-fade-in {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .testimonial-message {
@@ -491,4 +512,5 @@ section {
 .testimonial-prev, .testimonial-next {
     width: 75px;
     filter: invert(23%) sepia(0%) saturate(84%) hue-rotate(150deg) brightness(90%) contrast(82%);
+    cursor: pointer;
 }
