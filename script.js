@@ -75,4 +75,15 @@ window.onload = () => {
     const sliderNext = document.querySelector('.slider-next')
     sliderPrev.addEventListener('click', () => changeSlider(activeSlider - 1))
     sliderNext.addEventListener('click', () => changeSlider(activeSlider + 1))
+    /** Mobile Nav **/
+    const mobNavElement = document.querySelector('.mobile-menu-nav')
+    mobNavElement.addEventListener('click', () => {
+        const headerNav = document.querySelector('.header-nav')
+        headerNav.classList.toggle('header-nav-show')
+    })
+    const closeOverlayElement = document.querySelector('.icon-mobile-close-overlay')
+    closeOverlayElement.addEventListener('click', () => {
+        const headerNav = document.querySelector('.header-nav')
+        headerNav.classList.toggle('header-nav-show')
+    })
 }
