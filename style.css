@@ -776,12 +776,30 @@ section {
 
 /** Reach Out **/
 
+.reach-container {
+    justify-content: space-between;
+    min-height: 500px;
+}
+
 .reach-map-container {
     flex: 0 0 50%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;
+}
+
+.reach-text-container {
+    padding: 25px 95px;
+    align-items: flex-start;
+    text-align: justify;
+    margin: 0;
+    flex: 0 0 50%;
+}
+
+.reach-heading {
+    text-align: center;
+    width: 100%;
 }
 
 /** Footer **/
