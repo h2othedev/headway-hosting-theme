@@ -150,12 +150,20 @@ h3 {
     border-right: 2px solid #FFFFFF;
 }
 
+.secondary-white-border-top {
+    border-top: 2px solid #FFFFFF;
+}
+
 .secondary-black-color {
     color: #000000;
 }
 
 .secondary-black-bg {
     background-color: #000000;
+}
+
+.secondary-black-border {
+    border: 2px solid #000000;
 }
 
 .overlay-opacity {
@@ -402,7 +410,7 @@ section {
     }
 
     .section-heading h2 {
-        margin: 45px;
+        margin: 75px;
     }
 }
 
@@ -1239,4 +1247,56 @@ form.contact-form input[type=text], form.contact-form input[type=email] {
     form.contact-form input[type=text], form.contact-form input[type=email] {
         width: 100%;
     }
+}
+
+/** Hosting Plans / Services **/
+
+.hosting-container {
+    padding: 45px 0;
+}
+
+.hosting-card {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 275px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.hosting-card-content {
+    text-align: center;
+    width: 60%;
+}
+
+.hosting-plan-heading {
+    margin-bottom: 0;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.hosting-plan-pricing {
+    margin-top: 5px;
+}
+
+.hosting-plan-text {
+    line-height: 1.6rem;
+}
+
+.order-now {
+    text-align: center;
+    width: 94%;
+    padding: 10px;
+    font-size: 1.6rem;
+    transition: 1s color, 1s background-color;
+}
+
+.order-now:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.order-now a {
+    color: inherit;
 }
