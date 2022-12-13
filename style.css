@@ -195,17 +195,25 @@ input {
     margin: 15px 35px;
     margin-left: 0;
     margin-top: 0;
-    padding: 5px 75px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    padding-right: 10px;
+    width: 100%;
 }
 
 input:focus {
     outline: none;
 }
 
+textarea {
+    width: 100%;
+    outline: 0;
+}
+
 .button {
     padding: 5px 15px;
     max-width: max-content!important;
     cursor: pointer;
+    margin: 0;
 }
 
 a {
@@ -323,7 +331,6 @@ section {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    margin: 5px;
     align-self: stretch;
     position: relative;
 }
@@ -335,7 +342,6 @@ section {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    margin: 5px;
     align-self: stretch;
     position: relative;
 }
@@ -405,6 +411,7 @@ section {
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .hero-icon {
@@ -434,6 +441,8 @@ section {
 
 .solution-column {
     padding: 25px 0;
+    min-width: 320px;
+    margin: 5px;
 }
 
 .solution-icon-row {
@@ -467,8 +476,16 @@ section {
     justify-content: flex-start;
 }
 
+@media screen and (max-width: 768px) {
+    .region-cards {
+        justify-content: center;
+    }
+}
+
 .region-card {
     padding: 10px 15px;
+    min-width: 345px;
+    margin: 5px;
 }
 
 .region-card-inner {
@@ -493,7 +510,7 @@ section {
 }
 
 .heavy-lifting-container {
-    padding: 15px 75px;
+    padding: 15px 0;
     box-sizing: border-box;
     width: 90%;
     margin: 0 auto;
@@ -535,7 +552,7 @@ section {
 /** Testimonials **/
 
 .testimonials-container {
-    padding: 75px 175px;
+    padding: 75px 25px;
 }
 
 .testimonial-container {
@@ -601,8 +618,8 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 45px 15px;
-    width:100%;
+    padding: 45px 0;
+    width: 100%;
 }
 
 .wp-hosting-heading {
@@ -613,10 +630,11 @@ section {
 .wp-hosting-cards {
     width: 90%;
     position: relative;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .wp-hosting-card {
-    padding: 0 14%;
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -628,6 +646,12 @@ section {
     filter: drop-shadow(2px 2px 7px black);
 }
 
+.wp-hosting-card svg {
+    max-width: 264px;
+    min-width: 264px;
+    margin-bottom: 15px;
+}
+
 .wp-hosting-card:hover .wp-hosting-card-content {
     padding-top: 5px;
 }
@@ -636,7 +660,6 @@ section {
     position: absolute;
     top: 0;
     left: 50%;
-    padding: 0 3%;
     transform: translateX(-50%);
     text-align: center;
     height: 100%;
@@ -667,7 +690,7 @@ section {
 /** Slideshow Section **/
 
 .slideshow-container {
-    padding: 50px 125px;
+    padding: 50px 0;
 }
 
 .slider-container {
@@ -887,4 +910,50 @@ footer {
 
 .offer-card p {
     margin-top: 10px;
+}
+
+/** Contact **/
+
+.contact-container {
+    padding: 20px 40px;
+    margin: 0 50px;
+}
+
+.contact-col-left {
+    flex: 0 0 70%;
+    align-items: flex-start;
+}
+
+.contact-col-right {
+    flex: 0 0 25%;
+}
+
+.contact-col-right h3 {
+    text-align: center;
+}
+
+.contact-form-col-left {
+    flex: 0 0 65%;
+    align-items: flex-start;
+}
+
+.contact-form-col-right {
+    flex: 0 0 35%;
+}
+
+.contact-form-col-right img {
+    max-width: none;
+}
+
+form.contact-form {
+    width: 90%;
+}
+
+form.contact-form input[type=text], form.contact-form input[type=email] {
+    padding-right: 10px;
+    width: 75%;
+}
+
+.submit-row {
+    justify-content: space-between;
 }
