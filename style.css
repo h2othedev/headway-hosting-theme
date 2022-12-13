@@ -279,8 +279,8 @@ header {
 
 @media screen and (max-width: 768px) {
     .header-content {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 
@@ -362,6 +362,8 @@ a.nav-link {
     }
     .mobile-logo-nav {
         display: flex;
+        padding-left: 5px;
+        padding-right: 5px;
     }
     .mobile-menu-nav {
         display: flex;
@@ -465,6 +467,7 @@ section {
     background-size: cover;
     padding: 65px 0;
     position: relative;
+    background-position: center;
 }
 
 .hero-overlay {
@@ -493,10 +496,14 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+    .section-hero {
+        min-height: 77vh;
+    }
+
     .hero-subheading {
         width: 98%;
         margin: 0 auto;
-        padding: 0;
+        padding: 5px;
         box-sizing: border-box;
     }
 
@@ -510,6 +517,10 @@ section {
 
     .hero-text {
         margin: 0 25px;
+    }
+
+    .hero-icon-row {
+        display: block!important;
     }
 }
 
@@ -525,7 +536,7 @@ section {
     align-items: center;
     box-sizing: border-box;
     margin: 0 auto;
-    width: 75%;
+    width: 80%;
     padding-top: 25px;
 }
 
@@ -545,6 +556,11 @@ section {
     justify-content: center;
     margin: 10px 75px;
     flex: 1;
+    cursor: pointer;
+}
+
+.hero-icon:hover {
+    filter: invert(25%);
 }
 
 .hero-icon img {
@@ -780,10 +796,11 @@ section {
     cursor: pointer;
     transition: 1s filter;
     box-sizing: border-box;
+    filter: drop-shadow(2px 2px 7px black);
 }
 
 .wp-hosting-card:hover {
-    filter: drop-shadow(2px 2px 7px black);
+    filter: drop-shadow(5px 5px 14px black);
 }
 
 .wp-hosting-card svg {
@@ -806,6 +823,7 @@ section {
     overflow: hidden;
     overflow-y: scroll;
     transition: 1s padding;
+    width: 70%;
 }
 
 .wp-hosting-card-content::-webkit-scrollbar {
@@ -849,6 +867,11 @@ section {
     animation-name: slider-fade-in;
     animation-duration: 2s;
     animation-iteration-count: 1;
+}
+
+.slider-image {
+    border: 2px solid black;
+    box-shadow: 2px 2px 7px black;
 }
 
 @keyframes slider-fade-in {
@@ -895,12 +918,6 @@ section {
     width: 75px;
     filter: invert(23%) sepia(0%) saturate(84%) hue-rotate(150deg) brightness(90%) contrast(82%);
     cursor: pointer;
-    top: 125px;
-    position: relative;
-}
-
-.slider-prev-col, .slider-next-col {
-    align-self: flex-start;
 }
 
 @media screen and (max-width: 768px) {
@@ -923,6 +940,44 @@ section {
     background-size: contain;
     padding: 10px 25px;
     margin: 10px 25px;
+    transition: 1s filter;
+}
+
+.software-logo:hover {
+    filter: grayscale(100%);
+    animation-name: software-logo-rotate;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+}
+
+@keyframes software-logo-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    15% {
+        transform: rotate(90deg);
+    }
+    30% {
+        transform: rotate(180deg);
+    }
+    45% {
+        transform: rotate(90deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-90deg);
+    }
+    90% {
+        transform: rotate(-180deg);
+    }
+    95% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 /** Goals **/
@@ -1081,6 +1136,8 @@ footer {
 
 .about-container {
     text-align: center;
+    margin: 0 auto;
+    width: 70%;
 }
 
 .offers-main-container {
@@ -1096,6 +1153,11 @@ footer {
     padding: 15px 25px;
     text-align: center;
     margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.offer-card:hover {
+    filter: saturate(0%);
 }
 
 .offer-card h3 {
@@ -1158,4 +1220,23 @@ form.contact-form input[type=text], form.contact-form input[type=email] {
 
 .submit-row {
     justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form-col-left {
+        flex: 0 0 100%;
+    }
+    .contact-form-col-right {
+        flex: 0 0 100%;
+    }
+    .contact-col-left {
+        flex: 0 0 100%;
+        margin-bottom: 25px;
+    }
+    .contact-col-right {
+        flex: 0 0 100%;
+    }
+    form.contact-form input[type=text], form.contact-form input[type=email] {
+        width: 100%;
+    }
 }

@@ -50,8 +50,8 @@ window.onload = () => {
     }
     const testimonialPrev = document.querySelector('.testimonial-prev')
     const testimonialNext = document.querySelector('.testimonial-next')
-    testimonialPrev.addEventListener('click', () => changeTestimonial(activeTestimonial - 1))
-    testimonialNext.addEventListener('click', () => changeTestimonial(activeTestimonial + 1))
+    testimonialPrev && testimonialPrev.addEventListener('click', () => changeTestimonial(activeTestimonial - 1))
+    testimonialNext && testimonialNext.addEventListener('click', () => changeTestimonial(activeTestimonial + 1))
     //Slideshow
     let activeSlider = 0
     const sliders = document.querySelectorAll('.slider')
@@ -73,8 +73,8 @@ window.onload = () => {
     }
     const sliderPrev = document.querySelector('.slider-prev')
     const sliderNext = document.querySelector('.slider-next')
-    sliderPrev.addEventListener('click', () => changeSlider(activeSlider - 1))
-    sliderNext.addEventListener('click', () => changeSlider(activeSlider + 1))
+    sliderPrev && sliderPrev.addEventListener('click', () => changeSlider(activeSlider - 1))
+    sliderNext && sliderNext.addEventListener('click', () => changeSlider(activeSlider + 1))
     /** Mobile Nav **/
     const mobNavElement = document.querySelector('.mobile-menu-nav')
     mobNavElement.addEventListener('click', () => {
