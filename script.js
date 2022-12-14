@@ -118,6 +118,9 @@ const reflectStatUpdate = (element, increment, cur, end) => {
     element.textContent = cur
     countCurStat !== end && setTimeout(() => reflectStatUpdate(element, 1000, countCurStat, end), 50)
     countCurStat === end && (element.textContent += '+')
+    const statsCard = element.parentElement.parentElement
+    const percentColor = (cur / end)
+    statsCard.style.backgroundColor = `rgba(0, 0, 0, ${percentColor})`
 }
 
 const countStats = () => {

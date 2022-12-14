@@ -1221,11 +1221,11 @@ footer {
     border-radius: 1000px;
     cursor: pointer;
     user-select: none;
-    transition: 4s background-color, 4s text-shadow;
+    transition: 0.5s background-color, 4s text-shadow;
+    background-color: rgba(0,0,0,0);
 }
 
 .stats-card:hover {
-    background-color: transparent;
     text-shadow: -2px 0 black, 2px 0 black, 0 -2px black, 0 2px black;
 }
 
