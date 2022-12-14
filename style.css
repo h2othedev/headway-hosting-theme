@@ -615,7 +615,11 @@ section {
 .regions-container {
     padding: 25px 0;
     width: 100%;
-    background-image: url('./resources/images/other/earth-network.jpg');background-repeat: no-repeat;background-size: cover;background-attachment: fixed;
+    background-image: url('./resources/images/other/earth-network.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .regions-heading-container {
@@ -1200,6 +1204,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     filter: sepia(50%);
 }
 
