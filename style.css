@@ -1193,7 +1193,61 @@ footer {
     margin-top: 10px;
 }
 
+.stats-container {
+    padding: 25px 0;
+    width: 100%;
+    background-image: url('./resources/images/other/data-center-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: sepia(50%);
+}
+
+.stats-heading-container {
+    width: 90%;
+}
+
+.stats-cards {
+    width: 90%;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+}
+
+.stats-card {
+    padding: 10px;
+    width: 375px;
+    height: 375px;
+    margin: 5px;
+    border-radius: 1000px;
+    cursor: pointer;
+    user-select: none;
+    transition: 4s background-color, 4s text-shadow;
+}
+
+.stats-card:hover {
+    background-color: transparent;
+    text-shadow: -2px 0 black, 2px 0 black, 0 -2px black, 0 2px black;
+}
+
+.stats-card-inner {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.stats-number {
+    margin: 15px 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
 @media screen and (max-width: 768px) {
+    .stats-cards {
+        justify-content: center;
+    }
+    .stats-card {
+        min-width: 295px!important;
+        padding: 0!important;
+    }
     .about-container {
         padding: 25px 15px;
         text-align: justify;
