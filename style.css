@@ -583,6 +583,10 @@ section {
 
 /** Solutions **/
 
+.solutions-container {
+    padding: 25px 0;
+}
+
 .solutions-row {
     width: 80%;
 }
@@ -615,7 +619,7 @@ section {
 /** Regions **/
 
 .regions-container {
-    padding: 185px 0;
+    padding: 25px 0;
     width: 100%;
     background-image: url('./resources/images/other/earth-network.jpg');background-repeat: no-repeat;background-size: cover;background-attachment: fixed;
 }
@@ -668,7 +672,7 @@ section {
 }
 
 .heavy-lifting-container {
-    padding: 15px 0;
+    padding: 25px 0;
     box-sizing: border-box;
     width: 90%;
     margin: 0 auto;
@@ -720,7 +724,7 @@ section {
 /** Testimonials **/
 
 .testimonials-container {
-    padding: 75px 25px;
+    padding: 25px 0;
 }
 
 .testimonial-container {
@@ -860,7 +864,7 @@ section {
 /** Slideshow Section **/
 
 .slideshow-container {
-    padding: 50px 0;
+    padding: 25px 0;
 }
 
 .slider-container {
@@ -941,7 +945,9 @@ section {
 /** Supported Software **/
 
 .software-container {
-    padding: 50px;
+    padding: 25px 0;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .software-logo {
@@ -995,7 +1001,7 @@ section {
 /** Goals **/
 
 .goals-container {
-    padding: 0;
+    padding: 25px 0;
 }
 
 .goal-container {
@@ -1036,6 +1042,10 @@ section {
 }
 
 /** Reach Out **/
+
+.reach-container-main {
+    padding: 25px 0;
+}
 
 .reach-container {
     justify-content: space-between;
@@ -1097,7 +1107,7 @@ footer {
 .explore-container {
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 15px 35px;
+    padding: 75px 35px;
     line-height: 2.6rem;
 }
 
@@ -1153,7 +1163,7 @@ footer {
 }
 
 .offers-main-container {
-    padding: 75px 0;
+    padding: 25px 0;
 }
 
 .offers-container {
